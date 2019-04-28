@@ -1,0 +1,169 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    tools:context=".JobSeekerApplicationForm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/job_seeker_q_form_parent_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:background="@color/BGColor"
+            android:textColor="@color/White"
+            android:text="Question Forms"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/job_seeker_form_q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:text="Q: Talk about yourself ?"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:gravity="end|left"/>
+
+        <EditText
+            android:id="@+id/job_seeker_form_a1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/job_seeker_form_q2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:text="Q: Why do you want to get this job ?"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:gravity="end|left"/>
+
+        <EditText
+            android:id="@+id/job_seeker_form_a2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/job_seeker_form_q3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:text="Q: Where do you see yourself after 5 years ?"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:gravity="end|left"/>
+
+        <EditText
+            android:id="@+id/job_seeker_form_a3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/job_seeker_form_q4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:text="Q: What is your criteria for success ?"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:gravity="end|left"/>
+
+        <RadioGroup
+            android:id="@+id/job_seeker_form_rg4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <RadioButton
+                android:id="@+id/job_seeker_form_rb_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Money"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:checked="true"
+                android:gravity="end|left"/>
+            <RadioButton
+                android:id="@+id/job_seeker_form_rb_love_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Love Work"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:gravity="end|left"/>
+            <RadioButton
+                android:id="@+id/job_seeker_form_rb_upgrading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upgrading Quality Standards"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:gravity="end|left"/>
+            <RadioButton
+                android:id="@+id/job_seeker_form_rb_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Above"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:gravity="end|left"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/job_seeker_form_btn_apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="80dp"
+            android:layout_marginVertical="10dp"
+            android:text="Apply"
+            android:textColor="@color/White"
+            android:textSize="22sp"
+            android:background="@color/BGColor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:id="@+id/job_seeker_form_btn_add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/plus_icon"/>
+
+            <!--<ImageButton
+                android:id="@+id/job_seeker_form_btn_remove"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/plus_icon" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/BGColor"></LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

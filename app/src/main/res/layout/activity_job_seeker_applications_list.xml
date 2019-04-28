@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobSeekerApplicationsList"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/BGColor"
+        android:layout_weight="0.29">
+
+        <ImageView
+            android:id="@+id/job_seeker_applications_list_user_picture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/profile_pic"
+            app:layout_constraintBottom_toTopOf="@+id/job_seeker_applications_list__title"
+            app:layout_constraintEnd_toStartOf="@+id/job_seeker_applications_list__user_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/job_seeker_applications_list__user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="54dp"
+            android:gravity="center"
+            android:text="Ahmed Sami"
+            android:textColor="@color/White"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/job_seeker_applications_list__title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/job_seeker_applications_list_user_picture"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/job_seeker_applications_list__title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="90dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:text="@string/my_applications"
+            android:textColor="@color/White"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/job_seeker_applications_list_user_picture" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/job_seeker_applications_list__listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.69"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/BGColor"
+        android:layout_weight="0.02"></LinearLayout>
+
+</LinearLayout>

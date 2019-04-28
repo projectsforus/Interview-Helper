@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobSeekerStart"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.59"
+        android:background="@color/BGColor">
+
+        <ImageView
+            android:id="@+id/imageView_job_seeker_user_picture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="156dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/profile_pic"
+            app:layout_constraintBottom_toTopOf="@+id/job_seeker_start_user_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <TextView
+            android:id="@+id/job_seeker_start_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Ahmed Sami"
+            android:textColor="@color/White"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_job_seeker_user_picture"
+            app:layout_constraintVertical_bias="0.182" />
+
+        <TextView
+            android:id="@+id/job_seeker_start_user_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Doctor"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/job_seeker_start_user_name" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/job_seeker_start_user_job">
+
+            <ImageButton
+                android:id="@+id/button_job_seeker_call"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/call_icon" />
+
+            <ImageButton
+                android:id="@+id/button_job_seeker_message"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/message_icon" />
+
+            <!--<ImageButton
+                android:id="@+id/button_job_seeker_map"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/gps_icon" />-->
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.39"
+        android:background="@color/White"
+        android:orientation="vertical">
+        <!--<TextView
+            android:id="@+id/job_seeker_start_add_cv"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"
+            android:drawableLeft="@android:drawable/radiobutton_off_background"
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add CV"/>-->
+        <TextView
+            android:id="@+id/job_seeker_start_view_list_of_job_ann"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"
+            android:drawableLeft="@android:drawable/radiobutton_off_background"
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Job Announcements"
+            android:gravity="end|left"/>
+        <TextView
+            android:id="@+id/job_seeker_start_my_application"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"
+            android:drawableLeft="@android:drawable/radiobutton_off_background"
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Application"
+            android:gravity="end|left"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:background="@color/BGColor"></LinearLayout>
+
+</LinearLayout>

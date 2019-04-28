@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    tools:context=".RegisterAdditionalInfo" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:background="@color/BGColor"
+            android:textColor="@color/White"
+            android:text="Additional Information"
+            android:gravity="center"
+            android:padding="10dp" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/additional_info_et_name"
+            android:inputType="text"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job Name:"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/additional_info_et_job"
+            android:inputType="text"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/additional_info_et_age"
+            android:inputType="number"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number:"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/additional_info_et_phone"
+            android:inputType="phone"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Years Of Experience:"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/additional_info_et_exp"
+            android:inputType="number"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/additional_info_btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="80dp"
+            android:layout_marginVertical="20dp"
+            android:padding="10dp"
+            android:text="Start"
+            android:textColor="@color/White"
+            android:textSize="25sp"
+            android:background="@color/BGColor"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/BGColor"></LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

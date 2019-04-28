@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AVATAR</string>
+    <string name="login_btn_name">دخول</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="username_hint">اسم المستخدم</string>
+    <string name="register_btn_name">تسجيل الدخول</string>
+    <string name="new_user_btn">مستخدم جديد</string>
+    <string name="job_announcements">Job Announcements</string>
+    <string name="my_applications">My Applications</string>
+
+
+    <string-array name="job_announcement_array">
+        <item>Job Announcement 1</item>
+        <item>Job Announcement 2</item>
+        <item>Job Announcement 3</item>
+        <item>Job Announcement 4</item>
+    </string-array>
+
+    <string-array name="view_applications_array">
+        <item>Application 1</item>
+        <item>Application 2</item>
+        <item>Application 3</item>
+        <item>Application 4</item>
+    </string-array>
+
+    <string-array name="available_jobs_array">
+        <item>Available Job 1</item>
+        <item>Available Job 2</item>
+        <item>Available Job 3</item>
+        <item>Available Job 4</item>
+    </string-array>
+</resources>

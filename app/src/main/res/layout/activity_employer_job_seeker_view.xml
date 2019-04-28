@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployerJobSeekerView"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/BGColor"
+        android:layout_weight="0.02"></LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.86"
+        android:background="@color/White">
+
+        <ImageView
+            android:id="@+id/employer_jobSeeker_view_user_picture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/profile_pic"
+            app:layout_constraintBottom_toTopOf="@+id/employer_jobSeeker_view_btn_contact"
+            app:layout_constraintEnd_toStartOf="@+id/employer_jobSeeker_view_user_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/employer_jobSeeker_view_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Ahmed Sami"
+            android:textColor="#000"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/employer_jobSeeker_view_btn_contact"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/employer_jobSeeker_view_user_picture"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/employer_jobSeeker_view_description"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/text_view"
+            android:gravity="end|left"
+            android:inputType="textMultiLine"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/employer_jobSeeker_view_btn_contact" />
+
+        <Button
+            android:id="@+id/employer_jobSeeker_view_btn_contact"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="105dp"
+            android:layout_marginBottom="40dp"
+            android:background="#EEE"
+            android:padding="10dp"
+            android:text="Contact Information"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/employer_jobSeeker_view_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/employer_jobSeeker_view_user_picture" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/White"
+        android:layoutDirection="rtl">
+
+        <ImageButton
+            android:id="@+id/employer_jobSeeker_view_remove_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/no_icon"
+            android:clickable="false" />
+
+        <ImageButton
+            android:id="@+id/employer_jobSeeker_view_add_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/yes_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/BGColor"
+        android:layout_weight="0.02"></LinearLayout>
+</LinearLayout>
